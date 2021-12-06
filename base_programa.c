@@ -7,8 +7,8 @@ int a,b,c,d,matriz_ori[10][5],matriz_resul[10][3],teorema[100];
 div_t tcr,residuo; //para utilizar los residuos de divisiones
 int main (){
     system("cls");
-    printf("\nEste programa usa el teorema del residuo chino para resolver congruencias ");
-    printf("\nde la forma: 'x' es congruente a 'm' en el modulo 'n'");
+    printf("\nEste programa usa el teorema del residuo chino para resolver sistemas");
+    printf("\nde congruencias de la forma: 'x' es congruente a 'm' en el modulo 'n'");
     getchar();
     do{
     int contador_N=1;
@@ -46,7 +46,7 @@ int main (){
         matriz_resul[b][0]=residuo.rem;
         matriz_resul[b][1]=matriz_ori[b][0]; // Residuoo y modulo
         matriz_resul[b][2]=matriz_ori[b][1];
-        printf("%d %c %d (mod %d) \n",matriz_resul[b][0],"≡",matriz_resul[b][1],matriz_resul[b][2]);
+        printf("%d %c %d (mod %d) \n",matriz_resul[b][0],"=",matriz_resul[b][1],matriz_resul[b][2]);
     }
     printf("\n");
     
